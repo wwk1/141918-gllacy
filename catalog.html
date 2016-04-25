@@ -12,7 +12,7 @@
         <div class="container">
             <nav class="main-navigation">
                 <a href="#" class="index-logo">
-                    <img src="img/logo.png" width="153" height="63" alt="Магазин Глейси">
+                    <img src="img/logo-glacy.svg" width="153" height="63" alt="Магазин Глейси">
                 </a>
                 <ul>
                     <li>
@@ -57,7 +57,7 @@
             </ul>
         </div>
         <h1 class="page-caption">Сливочное мороженое</h1>
-        <div class="page-forms">
+        <div class="form">
             <div class="sorting">
                 <span>Сортировка</span>
                 <select name="popular">
@@ -67,12 +67,13 @@
             </div>
             <div class="range-filter">
                 <span>Цена: 100 руб.-500 руб.</span>
-                <input class="min-price" type="text" value="100">
-                <input class="max-price" type="text" value="500">
+                <input name="min-price" type="hidden" value="100">
+                <input name="max-price" type="hidden" value="500">
                 <div class="strip"></div>
-                <div class="activ-strip"></div>
-                <div class="left-ring"></div>
-                <div class="right-ring"></div>
+                <div class="activ-strip">
+                    <div class="left-ring"></div>
+                    <div class="right-ring"></div>
+                </div>
             </div>
             <div class="richness">
                 <span>Жирность</span>
@@ -118,89 +119,90 @@
         <div class="catalog">
             <div class="icecream-item item-hit orange">
                 <a href="#" title="Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой">
-                    <img class="icecream-foto" src="img/scs.png" width="267" height="267" alt="Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой">
+                    <img class="icecream-foto" src="img/scs.jpg" width="267" height="267" alt="Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой">
                     <span>Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</span>
                 </a>
                 <span class="price">310 ₽/кг</span>
             </div>
             <div class="icecream-item item-hit coffe">
                 <a href="#" title="Сливочно-кофейное с&nbsp;кусочками шоколада">
-                    <img class="icecream-foto" src="img/skks.png" width="267" height="267" alt="Сливочно-кофейное с&nbsp;кусочками шоколада">
+                    <img class="icecream-foto" src="img/skks.jpg" width="267" height="267" alt="Сливочно-кофейное с&nbsp;кусочками шоколада">
                     <span>Сливочно-кофейное с&nbsp;кусочками шоколада</span>
                 </a>
                 <span class="price">380 ₽/кг</span>
             </div>
             <div class="icecream-item item-hit straw">
                 <a href="#" title="Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада">
-                    <img class="icecream-foto" src="img/skpbs.png" width="267" height="267" alt="Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада">
+                    <img class="icecream-foto" src="img/skpbs.jpg" width="267" height="267" alt="Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада">
                     <span>Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада</span>
                 </a>
                 <span class="price">355 ₽/кг</span>
             </div>
             <div class="icecream-item item-hit cream">
                 <a href="#" title="Сливочное крем-брюле с&nbsp;карамельной подливкой">
-                    <img class="icecream-foto" src="img/skbkp.png" width="267" height="267" alt="Сливочное крем-брюле с&nbsp;карамельной подливкой">
+                    <img class="icecream-foto" src="img/skbkp.jpg" width="267" height="267" alt="Сливочное крем-брюле с&nbsp;карамельной подливкой">
                     <span>Сливочное крем-брюле с&nbsp;карамельной подливкой</span>
                 </a>
                 <span class="price">415 ₽/кг</span>
             </div>
             <div class="icecream-item item-hit cowberry">
                 <a href="#" title="Сливочное с&nbsp;брусничным джемом">
-                    <img class="icecream-foto" src="img/sbd.png" width="267" height="267" alt="Сливочное с&nbsp;брусничным джемом">
+                    <img class="icecream-foto" src="img/sbd.jpg" width="267" height="267" alt="Сливочное с&nbsp;брусничным джемом">
                     <span>Сливочное с&nbsp;брусничным джемом</span>
                 </a>
                 <span class="price">325 ₽/кг</span>
             </div>
             <div class="icecream-item item-hit  blueberry">
                 <a href="#" title="Сливочно-черничное с&nbsp;цельными ягодами черники">
-                    <img class="icecream-foto" src="img/sccyc.png" width="267" height="267" alt="Сливочно-черничное с&nbsp;цельными ягодами черники">
+                    <img class="icecream-foto" src="img/sccyc.jpg" width="267" height="267" alt="Сливочно-черничное с&nbsp;цельными ягодами черники">
                     <span>Сливочно-черничное с&nbsp;цельными ягодами черники</span>
                 </a>
                 <span class="price">410 ₽/кг</span>
             </div>
             <div class="icecream-item item-hit lemon">
                 <a href="#" title="Сливочно-лимонное с&nbsp;карамельной присыпкой">
-                    <img class="icecream-foto" src="img/slkp.png" width="267" height="267" alt="Сливочно-лимонное с&nbsp;карамельной присыпкой">
+                    <img class="icecream-foto" src="img/slkp.jpg" width="267" height="267" alt="Сливочно-лимонное с&nbsp;карамельной присыпкой">
                     <span>Сливочно-лимонное с&nbsp;карамельной присыпкой</span>
                 </a>
                 <span class="price">375 ₽/кг</span>
             </div>
             <div class="icecream-item item-hit chocolate">
                 <a href="#" title="Сливочное с&nbsp;шоколадной стружкой">
-                    <img class="icecream-foto" src="img/sscc.png" width="267" height="267" alt="Сливочное с&nbsp;шоколадной стружкой">
+                    <img class="icecream-foto" src="img/sscc.jpg" width="267" height="267" alt="Сливочное с&nbsp;шоколадной стружкой">
                     <span>Сливочное с&nbsp;шоколадной стружкой</span>
                 </a>
                 <span class="price">320 ₽/кг</span>
             </div>
             <div class="icecream-item item-hit vanilla">
                 <a href="#" title="Сливочно-ванильное с&nbsp;кусочками шоколада">
-                    <img class="icecream-foto" src="img/svkc.png" width="267" height="267" alt="Сливочно-ванильное с&nbsp;кусочками шоколада">
+                    <img class="icecream-foto" src="img/svkc.jpg" width="267" height="267" alt="Сливочно-ванильное с&nbsp;кусочками шоколада">
                     <span>Сливочно-ванильное с&nbsp;кусочками шоколада</span>
                 </a>
                 <span class="price">440 ₽/кг</span>
             </div>
             <div class="icecream-item item-hit menthol">
                 <a href="#" title="Сливочноe с&nbsp;ментоловым сиропом">
-                    <img class="icecream-foto" src="img/sms.png" width="267" height="267" alt="Сливочноe с&nbsp;ментоловым сиропом">
+                    <img class="icecream-foto" src="img/sms.jpg" width="267" height="267" alt="Сливочноe с&nbsp;ментоловым сиропом">
                     <span>Сливочноe с&nbsp;ментоловым сиропом</span>
                 </a>
                 <span class="price">435 ₽/кг</span>
             </div>
             <div class="icecream-item item-hit blackchoco">
                 <a href="#" title="Сливочное с&nbsp;кусочками черного шоколада">
-                    <img class="icecream-foto" src="img/skcc.png" width="267" height="267" alt="Сливочное с&nbsp;кусочками черного шоколада">
+                    <img class="icecream-foto" src="img/skcc.jpg" width="267" height="267" alt="Сливочное с&nbsp;кусочками черного шоколада">
                     <span>Сливочное с&nbsp;кусочками черного шоколада</span>
                 </a>
                 <span class="price">355 ₽/кг</span>
             </div>
             <div class="icecream-item item-hit mint">
                 <a href="#" title="Сливочное с&nbsp;мятным сиропом">
-                    <img class="icecream-foto" src="img/ssms.png" width="267" height="267" alt="Сливочное с&nbsp;мятным сиропом">
+                    <img class="icecream-foto" src="img/ssms.jpg" width="267" height="267" alt="Сливочное с&nbsp;мятным сиропом">
                     <span>Сливочное с&nbsp;мятным сиропом</span>
                 </a>
                 <span class="price">420 ₽/кг</span>
             </div>
             <div class="pagination">
+                <span>&lt;</span>
                 <span class="pushed">1</span>
                 <a class="btn" href="#">2</a>
                 <a class="btn" href="#">3</a>
@@ -226,7 +228,7 @@
                 <span><a href="#">Экологические стандарты</a></span>
             </div>
             <div class="copy">
-                <img src="img/logoh.svg" alt="Лого">
+                <img src="img/logo-academy.svg" alt="Лого">
                 <span>Сделано в<a href="#"> HTML Academy</a> © 2016</span>
             </div>
         </div>
