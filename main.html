@@ -4,18 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Магазин мороженого Глейси</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="main-header">
         <div class="container">
+            <img class="index-logo" src="img/logo.png" width="153" height="63" alt="Магазин Глейси">
             <nav class="main-navigation">
                 <ul>
-                    <li>
-                        <a class="index-logo">
-                            <img src="http://placehold.it/15x10" alt="Магазин Глейси">
-                        </a>
-                    </li>
                     <li>
                         <a href="#">Каталог</a>
                     </li>
@@ -33,10 +30,10 @@
                 </form>
             </div>
             <div class="user-block">
-                <a class="btn" href="#">Вход</a>
+                <a class="btn" href="#"><img src="img/vhod.svg" alt="Вход"> Вход</a>
             </div>
-            <div class="basket">
-                <a class="btn" href="#">Пусто</a>
+            <div class="basket-empty">
+                <a class="btn" href="#"><img src="img/korzina.svg" alt="Корзина"> Пусто</a>
             </div>
             <div class="header-contacts">
                 <span>с 10 до 20, ежедневно<br><a href="tel:+78124502525"> 8 812 450-25-25</a></span>
@@ -44,93 +41,86 @@
         </div>
     </header>
     <main class="container">
-        <div class="slider">
-            <ul class="list-slider">
-                <li><img src="http://placehold.it/150x100" alt="Мороженое"></li>
+        <div class="slider-wrapper">
+            <div class="slider-slides">
+                <div class="slider-item">
+                    <span class="slider-name">Крем-брюле и&nbsp;пломбир<br>с&nbsp;малиновым джемом</span>
+                    <button class="slider-key"></button>
+                </div>
+                <div class="slider-item">
+                    <span class="slider-name">Крем-брюле и&nbsp;пломбир<br>с&nbsp;малиновым джемом</span>
+                    <button class="slider-key"></button>
+                </div>
+                <div class="slider-item">
+                    <span class="slider-name">Крем-брюле и&nbsp;пломбир<br>с&nbsp;малиновым джемом</span>
+                    <button class="slider-key"></button>
+                </div>
+            </div>
+            <ul class="slider-nav">
+                <li><img src="img/icm.png" alt="Мороженое"></li>
                 <li><img src="http://placehold.it/150x100" alt="Мороженое"></li>
                 <li><img src="http://placehold.it/150x100" alt="Мороженое"></li>
             </ul>
         </div>
-        <h1>Крем-брюле и&nbsp;пломбир<br>с&nbsp;малиновым джемом</h1>
         <div class="give-both">
-            <a class="btn" href="#">Давайте оба!</a>
+            <a class="btn btn-big" href="#">Давайте оба!</a>
         </div>
         <div class="presents">
-            <div class="present-jam">
+            <div class="present-item present-jam">
                 <h2>Малинка даром!</h2>
-                <p>При покупке 2&nbsp;кг любого фруктового мороженого добавим
-                    <br> в&nbsp;ваш заказ банку малинового варенья бесплатно.</p>
+                <p>При покупке 2&nbsp;кг любого фруктового мороженого добавим в&nbsp;ваш заказ банку малинового варенья бесплатно.</p>
                 <a class="btn" href="#">Хочу варенье!</a>
             </div>
-            <div class="present-choco">
+            <div class="present-item present-choco">
                 <h2>Шоколадки даром!</h2>
-                <p>При покупке 2&nbsp;кг пломбира,добавим в&nbsp;ваш заказ упаковку
-                    <br> вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+                <p>При покупке 2&nbsp;кг пломбира,добавим в&nbsp;ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
                 <a class="btn" href="#">Хочу шоколадки!</a>
             </div>
         </div>
-        <div class="main-catalog">
-            <div class="main-catalog-first">
-                <img class="hit" src="http://placehold.it/20x20" alt="Хит">
+        <div class="catalog">
+            <div class="icecream-item item-hit orange">
                 <a href="#" title="Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой">
-                    <img class="icecream-foto" src="http://placehold.it/150x100" alt="Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой">
+                    <img class="icecream-foto" src="img/scs.png" width="267" height="267" alt="Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой">
+                    <span>Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</span>
                 </a>
-                <img src="http://placehold.it/20x10" class="price" alt="Цена">
-                <span>Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</span>
+                <span class="price">310 ₽/кг</span>
             </div>
-            <div class="main-catalog-second">
-                <img class="hit" src="http://placehold.it/20x20" alt="Хит">
+            <div class="icecream-item item-hit coffe">
                 <a href="#" title="Сливочно-кофейное с&nbsp;кусочками шоколада">
-                    <img class="icecream-foto" src="http://placehold.it/150x100" alt="Сливочно-кофейное с&nbsp;кусочками шоколада">
+                    <img class="icecream-foto" src="img/skks.png" width="267" height="267" alt="Сливочно-кофейное с&nbsp;кусочками шоколада">
+                    <span>Сливочно-кофейное с&nbsp;кусочками шоколада</span>
                 </a>
-                <img src="http://placehold.it/20x10" class="price" alt="Цена">
-                <span>Сливочно-кофейное с&nbsp;кусочками шоколада</span>
+                <span class="price">380 ₽/кг</span>
             </div>
-            <div class="main-catalog-third">
-                <img class="hit" src="http://placehold.it/20x20" alt="Хит">
+            <div class="icecream-item item-hit straw">
                 <a href="#" title="Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада">
-                    <img class="icecream-foto" src="http://placehold.it/150x100" alt="Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада">
+                    <img class="icecream-foto" src="img/skpbs.png" width="267" height="267" alt="Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада">
+                    <span>Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада</span>
                 </a>
-                <img src="http://placehold.it/20x10" class="price" alt="Цена">
-                <span>Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада</span>
+                <span class="price">355 ₽/кг</span>
             </div>
-            <div class="main-catalog-fourth">
-                <img class="hit" src="http://placehold.it/20x20" alt="Хит">
+            <div class="icecream-item item-hit cream">
                 <a href="#" title="Сливочное крем-брюле с&nbsp;карамельной подливкой">
-                    <img class="icecream-foto" src="http://placehold.it/150x100" alt="Сливочное крем-брюле с&nbsp;карамельной подливкой">
+                    <img class="icecream-foto" src="img/skbkp.png" width="267" height="267" alt="Сливочное крем-брюле с&nbsp;карамельной подливкой">
+                    <span>Сливочное крем-брюле с&nbsp;карамельной подливкой</span>
                 </a>
-                <img src="http://placehold.it/20x10" class="price" alt="Цена">
-                <span>Сливочное крем-брюле с&nbsp;карамельной подливкой</span>
+                <span class="price">415 ₽/кг</span>
             </div>
         </div>
         <div class="features">
             <h2>Магазин Глейси&nbsp;&mdash; это онлайн и&nbsp;офлайн магазин по&nbsp;
             продаже мороженого собственного производства на&nbsp;развес</h2>
-            <div class="features-item">
-                <img src="http://placehold.it/20x20" class="icon" alt="Иконка">
-                <p>Все наше мороженое изготавливается на&nbsp;собственном
-                    <br>производстве, с&nbsp;использованием современного оборудования
-                    <br>и&nbsp;проверенных временем технологий.</p>
+            <div class="features-item icon-icream">
+                <p>Все наше мороженое изготавливается на&nbsp;собственном производстве, с&nbsp;использованием современного оборудования и&nbsp;проверенных временем технологий.</p>
             </div>
-            <div class="features-item">
-                <img src="http://placehold.it/20x20" class="icon" alt="Иконка">
-                <p>Для приготовления мороженого используются настоящие
-                    <br>сливки и&nbsp;молоко высочайшего качества. Все дополнительные
-                    <br> ингредиенты и&nbsp;добавки произведены из&nbsp;натурального
-                    <br>экологически чистого сырья.</p>
+            <div class="features-item icon-leaf">
+                <p>Для приготовления мороженого используются настоящие сливки и&nbsp;молоко высочайшего качества. Все дополнительные ингредиенты и&nbsp;добавки произведены из&nbsp;натурального экологически чистого сырья.</p>
             </div>
-            <div class="features-item">
-                <img src="http://placehold.it/20x20" class="icon" alt="Иконка">
-                <p>Закупка ингредиентов производится только у&nbsp;проверенных
-                    <br>фермерских хозяйств и&nbsp;компаний, с&nbsp;которыми нас связывает
-                    <br> долговременное сотрудничество.</p>
+            <div class="features-item icon-cow">
+                <p>Закупка ингредиентов производится только у&nbsp;проверенных фермерских хозяйств и&nbsp;компаний, с&nbsp;которыми нас связывает долговременное сотрудничество.</p>
             </div>
-            <div class="features-item">
-                <img src="http://placehold.it/20x20" class="icon" alt="Иконка">
-                <p>Доставка нашего мороженого до&nbsp;заказчиков осуществляется
-                    <br>в&nbsp;специальном термопаке, который не&nbsp;дает мороженому
-                    <br> растаять в&nbsp;пути и&nbsp;позволяет ему сохранить свой превосходный
-                    <br>вкус.</p>
+            <div class="features-item icon-temp">
+                <p>Доставка нашего мороженого до&nbsp;заказчиков осуществляется в&nbsp;специальном термопаке, который не&nbsp;дает мороженому растаять в&nbsp;пути и&nbsp;позволяет ему сохранить свой превосходный вкус.</p>
             </div>
         </div>
         <div>
@@ -152,35 +142,35 @@
     <div class="find-us">
         <div class="conteiner">
             <div class="map">
-                <img src="http://placehold.it/150x100" alt="Карта">
-            </div>
-            <div class="footer-contacts">
-                <span>Адрес главного офиса и<br>офлайн магазина:<br><b> ул. Большая конюшенная
+                <img src="img/map.png" width="1200" height="430" alt="Карта">
+                <div class="footer-contacts">
+                    <span>Адрес главного офиса и<br>офлайн магазина:<br><b> ул. Большая конюшенная
                 <br> 19/8, Санкт-Петербург</b> Для заказов по телефону: 
                 <a href="tel:+78124502525"><b>8 812 450-25-25</b></a> (с 10 до 20 ежедневно)
                 </span>
-                <a class="btn" href="#">Форма обратной связи</a>
+                    <a class="btn" href="#">Форма обратной связи</a>
+                </div>
             </div>
         </div>
     </div>
     <footer>
         <div class="conteiner">
             <div class="footer-social">
-                <a class="social-btn social-btn-twitter" href="#">Twitter</a>
-                <a class="social-btn social-btn-inst" href="#">Instagram</a>
-                <a class="social-btn social-btn-fb" href="#">Facebook</a>
-                <a class="social-btn social-btn-b" href="#">VK</a>
+                <a class="social-btn social-btn-twitter" href="#"><img src="img/tw.svg" alt="Twitter"></a>
+                <a class="social-btn social-btn-inst" href="#"><img src="img/insta.svg" alt="Instagram"></a>
+                <a class="social-btn social-btn-fb" href="#"><img src="img/fb.svg" alt="Facebook"></a>
+                <a class="social-btn social-btn-b" href="#"><img src="img/vk.svg" alt="VK"></a>
             </div>
             <div class="about-us">
-                <img class="heart" src="http://placehold.it/20x20" alt="Сердце">
+                <img class="heart" src="img/heart.svg" alt="Сердце">
                 <span><a href="#"><b>Для поставщиков</b></a></span>
                 <span><a href="#">О производстве</a></span>
                 <span><a href="#">Наши документы</a></span>
                 <span><a href="#">Экологические стандарты</a></span>
             </div>
             <div class="copy">
-                <img src="http://placehold.it/150x100" alt="Лого">
-                <span>Сделано в HTML Academy © 2016</span>
+                <img src="img/logoh.svg" alt="Лого">
+                <span>Сделано в<a href="#"> HTML Academy</a> © 2016</span>
             </div>
         </div>
     </footer>
