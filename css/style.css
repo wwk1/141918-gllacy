@@ -1,21 +1,182 @@
-body {
+:root {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71em;
     color: #323232;
     font-weight: normal;
-    font-family: Roboto
+    font-family: "Roboto", "Arial", sans-serif;
+    background: #849d8f;
 }
+
+body {}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 h1 {
+    outline: 2px solid black;
     font-size: 60px;
     line-height: 60.35px;
     color: #ffffff;
     font-weight: bold;
-    font-family: Roboto
+    font-family: Roboto, "Arial", sans-serif;
 }
+
 h2 {
     font-size: 35px;
     line-height: 41px;
     color: #ffffff;
     font-weight: bold;
-    font-family: Roboto
+    font-family: Roboto, "Arial", sans-serif;
 }
+
+.container {
+    width: 1200px;
+    margin: 0 auto
+}
+
+.main-navigation {
+    outline: 2px solid black;
+    float: left;
+    width: 880px;
+    text-align: middle;
+}
+
+.user-block {
+    outline: 2px solid black;
+    float: right;
+    width: 267px
+}
+
+.index-logo {
+    display: inline;
+    outline: 2px solid black;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.header-contacts {
+    outline: 2px solid black;
+}
+
+.main-header a {
+    display: inline;
+    outline: 2px solid black;
+    margin-bottom: 50px;
+}
+
+.slider-wrapper {
+    outline: 2px solid black;
+    background: radial-gradient(#cdf4df, #849d8f);
+    width: 1200px
+}
+
+.presents {
+    outline: 2px solid black;
+    margin-left: 26px;
+    margin-right: 26px;
+    margin-bottom: 40px;
+}
+
+.present-item {
+    outline: 2px solid black;
+    width: 560px
+}
+
+.present-jam {background-image: url(../img/raspberry-bg.jpg);
+    outline: 2px solid black;
+    float: left;
+}
+
+.present-choco {background-image: url(../img/chocjlate-bg.jpg);
+    float: right;
+}
+
+.icecream-item {
+    float: left;
+    width: 267px;
+    margin-left: 26px
+}
+
+.icecream-item img {
+    border-radius: 50%
+}
+
+.catalog {
+    outline: 2px solid black;
+    margin-bottom: 40px
+}
+
+.features {
+    background-image: url(../img/waffle-bg.png);
+    outline: 2px solid black;
+    margin-left: 26px;
+    margin-right: 26px;
+    margin-bottom: 40px;
+}
+
+.blog-subscription {
+    outline: 2px solid black;
+    margin-bottom: 40px;
+}
+
+.blog {
+    outline: 2px solid black;
+    float: left;
+    margin-left: 26px;
+    margin-right: 13px;
+    width: 560px;
+    background-image: url(../img/strowbg.jpg);
+}
+
+.subscription {
+    outline: 2px solid black;
+    background-color: #f8f7f4;
+    float: right;
+    margin-right: 26px;
+    width: 560px;
+}
+
+.find-us {
+    outline: 2px solid black;
+    margin-top: 40px;
+    margin-right: 26px;
+    margin-left: 13px;
+}
+
+.address {
+    outline: 2px solid black;
+    float: right;
+}
+
+footer {}
+
+.footer-social {
+    outline: 2px solid black;
+    float: left;
+    width: 267px;
+    margin-left: 26px
+}
+
+.about-us {
+    outline: 2px solid black;
+    float: left;
+    width: 560px;
+    margin-left: 26px
+}
+
+.copy {
+    outline: 2px solid black;
+    float: right;
+    width: 267px;
+    margin-left: 26px;
+    margin-right: 26px;
+}
+
+.filter-form {
+    outline: 2px solid black;
+    margin-bottom: 40px
+}
+.pagination {outline: 2px solid black; margin-bottom: 48px}

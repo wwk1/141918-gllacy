@@ -9,33 +9,29 @@
 
 <body>
     <header class="main-header">
-        <div class="container">
-            <nav class="main-navigation">
-                <a href="#" class="index-logo">
-                    <img src="img/logo-glacy.svg" width="153" height="63" alt="Магазин Глейси">
-                </a>
-                <ul>
-                    <li>
-                        <a class="page-nav" href="#">Каталог</a>
-                    </li>
-                    <li>
-                        <a href="#">Доставка и оплата</a>
-                    </li>
-                    <li>
-                        <a href="#">О компании</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="search">
-                <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-                    <input type="text" name="search">
-                </form>
-            </div>
-            <div class="user-block">
-                <a class="btn" href="#"><img src="img/vhod.svg" alt="Вход"> Вход</a>
-            </div>
-            <div class="basket">
-                <a class="btn" href="#"><img src="img/korzina.svg" alt="Корзина">2 товара</a>
+        <div class="container clearfix">
+            <div class="header-menu clearfix">
+                <nav class="main-navigation">
+                    <a href="#" class="index-logo">
+                        <img src="img/logo-glacy.svg" width="153" height="63" alt="Магазин Глейси">
+                    </a>
+                    <a class="page-nav" href="#">Каталог</a>
+                    <a href="#">Доставка и оплата</a>
+                    <a href="#">О компании</a>
+                </nav>
+                <div class="user-block">
+                    <div class="search">
+                        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                            <input type="text" name="search">
+                        </form>
+                    </div>
+                    <div class="user-block">
+                        <a class="btn" href="#"><img src="img/vhod.svg" alt="Вход"> Вход</a>
+                    </div>
+                    <div class="basket">
+                        <a class="btn" href="#"><img src="img/korzina.svg" alt="Корзина">2 товара</a>
+                    </div>
+                </div>
             </div>
             <div class="header-contacts">
                 <span>с 10 до 20, ежедневно<br><a href="tel:+78124502525"> 8 812 450-25-25</a></span>
@@ -44,20 +40,12 @@
     </header>
     <main class="container">
         <div class="breadcrumbs">
-            <ul>
-                <li>
-                    <a href="#">Главная</a>
-                </li>
-                <li>
-                    <a href="#">Каталог</a>
-                </li>
-                <li>
-                    <span>Сливочное</span>
-                </li>
-            </ul>
+            <a href="#">Главная</a>
+            <a href="#">Каталог</a>
+            <span>Сливочное</span>
         </div>
         <h1 class="page-caption">Сливочное мороженое</h1>
-        <div class="form">
+        <form class="filter-form clearfix" action="https://echo.htmlacademy.ru" method="post">
             <div class="sorting">
                 <span>Сортировка</span>
                 <select name="popular">
@@ -77,46 +65,42 @@
             </div>
             <div class="richness">
                 <span>Жирность</span>
-                <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-                    <label class="fat-form-list">
-                        <input type="radio" name="group" value="zero">0%
-                    </label>
-                    <label class="fat-form-list">
-                        <input type="radio" checked name="group" value="ten">до 10%
-                    </label>
-                    <label class="fat-form-list">
-                        <input type="radio" name="group" value="thirty">до 30%
-                    </label>
-                    <label class="fat-form-list">
-                        <input type="radio" name="group" value="morethirty">выше 30%
-                    </label>
-                </form>
+                <label class="fat-form-list">
+                    <input type="radio" name="group" value="zero">0%
+                </label>
+                <label class="fat-form-list">
+                    <input type="radio" checked name="group" value="ten">до 10%
+                </label>
+                <label class="fat-form-list">
+                    <input type="radio" name="group" value="thirty">до 30%
+                </label>
+                <label class="fat-form-list">
+                    <input type="radio" name="group" value="morethirty">выше 30%
+                </label>
             </div>
             <div class="staff">
                 <span>Наполнители</span>
-                <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
-                    <label class="stuff-form-list">
-                        <input type="checkbox" checked name="choco">шоколадные
-                    </label>
-                    <label class="stuff-form-list">
-                        <input type="checkbox" name="sugar">сахарные присыпки
-                    </label>
-                    <label class="stuff-form-list">
-                        <input type="checkbox" name="fruit">фрукты
-                    </label>
-                    <label class="stuff-form-list">
-                        <input type="checkbox" name="syrup">сиропы
-                    </label>
-                    <label class="stuff-form-list">
-                        <input type="checkbox" name="jam">джемы
-                    </label>
-                </form>
+                <label class="stuff-form-list">
+                    <input type="checkbox" checked name="choco">шоколадные
+                </label>
+                <label class="stuff-form-list">
+                    <input type="checkbox" name="sugar">сахарные присыпки
+                </label>
+                <label class="stuff-form-list">
+                    <input type="checkbox" name="fruit">фрукты
+                </label>
+                <label class="stuff-form-list">
+                    <input type="checkbox" name="syrup">сиропы
+                </label>
+                <label class="stuff-form-list">
+                    <input type="checkbox" name="jam">джемы
+                </label>
             </div>
             <div class="apply">
                 <button class="btn" type="submit">Применить</button>
             </div>
-        </div>
-        <div class="catalog">
+        </form>
+        <div class="catalog clearfix">
             <div class="icecream-item item-hit orange">
                 <a href="#" title="Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой">
                     <img class="icecream-foto" src="img/scs.jpg" width="267" height="267" alt="Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой">
@@ -201,34 +185,33 @@
                 </a>
                 <span class="price">420 ₽/кг</span>
             </div>
-            <div class="pagination">
-                <span>&lt;</span>
-                <span class="pushed">1</span>
-                <a class="btn" href="#">2</a>
-                <a class="btn" href="#">3</a>
-                <a class="btn" href="#">4</a>
-                <a class="btn" href="#">5</a>
-                <a class="btn" href="#">&gt;</a>
-            </div>
+        </div>
+        <div class="pagination">
+            <span>&lt;</span>
+            <span class="pushed">1</span>
+            <a class="btn" href="#">2</a>
+            <a class="btn" href="#">3</a>
+            <a class="btn" href="#">4</a>
+            <a class="btn" href="#">5</a>
+            <a class="btn" href="#">&gt;</a>
         </div>
     </main>
     <footer>
-        <div class="conteiner">
+        <div class="container clearfix">
             <div class="footer-social">
                 <a class="social-btn social-btn-twitter" href="#"><img src="img/tw.svg" alt="Twitter"></a>
                 <a class="social-btn social-btn-inst" href="#"><img src="img/insta.svg" alt="Instagram"></a>
                 <a class="social-btn social-btn-fb" href="#"><img src="img/fb.svg" alt="Facebook"></a>
                 <a class="social-btn social-btn-b" href="#"><img src="img/vk.svg" alt="VK"></a>
             </div>
-            <div class="about-us">
-                <img class="heart" src="img/heart.svg" alt="Сердце">
+            <div class="about-us heart">
                 <span><a href="#"><b>Для поставщиков</b></a></span>
                 <span><a href="#">О производстве</a></span>
                 <span><a href="#">Наши документы</a></span>
                 <span><a href="#">Экологические стандарты</a></span>
             </div>
             <div class="copy">
-                <img src="img/logo-academy.svg" alt="Лого">
+                <img src="img/logo-academy.svg" alt="HTML Academy">
                 <span>Сделано в<a href="#"> HTML Academy</a> © 2016</span>
             </div>
         </div>
