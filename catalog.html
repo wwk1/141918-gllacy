@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Магазин мороженого Глейси</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -12,21 +14,25 @@
         <div class="container clearfix">
             <div class="header-menu clearfix">
                 <nav class="main-navigation">
-                    <a href="#" class="index-logo">
-                        <img src="img/logo-glacy.svg" width="153" height="63" alt="Магазин Глейси">
-                    </a>
-                    <a class="page-nav" href="#">Каталог</a>
-                    <a href="#">Доставка и оплата</a>
-                    <a href="#">О компании</a>
+                    <ul>
+                        <li>
+                            <a href="#" class="index-logo">
+                                <img src="img/logo-glacy.svg" width="153" height="63" alt="Магазин Глейси">
+                            </a>
+                        </li>
+                        <li><a class="page-nav" href="#">Каталог</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">О компании</a></li>
+                    </ul>
                 </nav>
                 <div class="user-block">
                     <div class="search">
-                        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                         <!--<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                             <input type="text" name="search">
-                        </form>
+                        </form>-->
                     </div>
-                    <div class="user-block">
-                        <a class="btn" href="#"><img src="img/vhod.svg" alt="Вход"> Вход</a>
+                    <div class="user-gate">
+                        <a class="btn" href="#"><img src="img/vhod.svg" alt="Вход">Вход</a>
                     </div>
                     <div class="basket">
                         <a class="btn" href="#"><img src="img/korzina.svg" alt="Корзина">2 товара</a>
